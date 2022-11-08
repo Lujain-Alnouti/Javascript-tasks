@@ -9,7 +9,7 @@ lastOfarray(arr);
 
 let arr1=new Array;
 for(let i=0;i<7;i++){
-    arr1[i]=prompt("please fill the array"+ (i+1));
+    arr1[i]=prompt("please fill the array # "+ (i+1));
 }
 document.write("<br> second array 'values from user': <br>"+ arr1 + "<br>");
 lastOfarray(arr1);

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password</title>
+</head>
+<body>
+    <form action="" method="get" onchange="FormPass()"  >
+        <b>Password(min 6 character):</b> 
+        <input type="password" id="firstpass" placeholder="Password1" style="margin-left:30px;">
+        <p id="mess" style="display:none;"></p>
+        <br> <br><br>
+        <b>Repeat Password:</b> 
+        <input type="password" id="spass" placeholder="Password2" onchange="sec_pass()" style="margin-left:90px;"> 
+        <p id="mess2" style="display:none;"></p>
+        <br> <br><br>
+        <input type="submit" id="sub" value="submit" style="display:none;">
+    </form>
+    
+    <script src="task4.js"></script>
+</body>
+</html>

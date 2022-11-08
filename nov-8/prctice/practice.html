@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        .Paragraph{
+            color: chartreuse;
+        }
+        #title{
+            background-color:black;
+            color: aliceblue;
+            
+        }
+    </style>
+  
+    
+</head>
+<body >
+    <h1 class="Paragraph">Welcome statement</h1>
+    <span id="title"></span>
+    <br>
+    <p>Mouse-Over & Mouse-Out</p>
+    <img src="off-L.png" alt="Off" id="light" onmouseover="on_light()" onmouseout="off_light()">
+    <hr>
+    <p>Onclick</p>
+    <img src="close-d.png"  id="door" onclick="opendoor()">
+    <hr>
+    <p>OnChange</p>
+    <select id="myse" onchange="choice_item()">
+        <option value="ON">On-Light</option>
+        <option value="OFF">Off-Light</option>
+        <option value="OPEN">OPEN-DOOR</option>
+        <option value="CLOSE">CLOSE-DOOR</option>
+      </select>
+      <p id="body"></p>
+   
+    <script src="practice.js"></script>
+</body>
+</html>
