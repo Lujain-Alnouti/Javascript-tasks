@@ -1,0 +1,85 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Storage</title>
+</head>
+<body>
+    <form action="" method="get" >
+        <label for="">Subject : </label>
+        <input type="text" name="" id="subject" style="margin-left:150px;" onchange="project(this)"><br> <br>
+        <label for="">Description : </label>
+        <textarea name="" id="desc" cols="30" rows="10" placeholder="Description" style="margin-left:146px;" onchange="project(this)"></textarea>
+        <br> <br> <br>
+        <label for="">Technologies : </label>
+        <input type="checkbox" id="JS" name="l1" style="margin-left:146px;" onchange="Tec(this)">
+        <label for="JS">JS</label>
+        <input type="checkbox" id="CSS" name="l2" onchange="Tec(this)">
+        <label for="CSS">CSS</label>
+        <input type="checkbox" id="HTML" name="l3" onchange="Tec(this)">
+        <label for="HTML">HTML</label>
+        <br> <br> <br>
+        <label for="">User Types : </label>
+        <input type="checkbox" id="provider" name="l1" style="margin-left:146px;">
+        <label for="JproviderS">Providers</label>
+        <input type="checkbox" id="Ruser" name="l2">
+        <label for="Ruser">Regular User</label>
+        <input type="checkbox" id="company" name="l3">
+        <label for="company">Companies</label>
+        
+       
+    </form>
+    <button onclick="Submit()" id="sub" style="margin-left:140px; background-color: darkgray; width:100px; height:60px;">Submit</button>
+    <br><br>
+    <div style="display: none;" id="divv">
+        <span>Subject : </span>
+        <span id="sub"></span> <br>
+        <span>Description :  </span>
+        <span id="descc"></span><br>
+        <span>Technologies : </span>
+        <span id="T1"></span>
+        <span id="T2"></span>
+        <span id="T3"></span> <br>
+        <span>User Types : </span>
+        <span id="U1"></span>
+        <span id="U2"></span>
+        <span id="U3"></span> <br>
+    </div>
+    
+    <script src="task2.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Storage</title>
+</head>
+<body>
+    <h1>Master Beast</h1>
+    <span style="background-color:darkseagreen; font-weight: bold;">Subject :</span>
+    <span id="sub" style="margin-left:10px;"></span> <br> <br>
+    <span style="background-color:darkseagreen; font-weight: bold;">Description :</span>
+    <p id="desc" style="margin-left:10px;"></p>
+    <span style="background-color:darkseagreen; font-weight: bold;">Technologies :</span>
+    <ul id="technologies" style="margin-left:10px;">
+        <li id="JS">JavaScript</li>
+        <li id="CSS">CSS</li>
+        <li id="HTML">HTML</li>
+    </ul>
+    <span style="background-color:darkseagreen; font-weight: bold;">User Types :</span>
+    <ul id="user" style="margin-left:10px;">
+        <li id="prov"></li>
+        <li id="RU"></li>
+        <li id="Comp"></li>
+    </ul>
+    
+    <script src="task2.js"></script>
+</body>
+</html>

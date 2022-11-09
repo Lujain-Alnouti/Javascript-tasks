@@ -1,4 +1,5 @@
 function Forms(){
+
 var x=document.getElementById("font_family");
 switch(x){
     case "Arial":{
@@ -10,6 +11,9 @@ switch(x){
     case "Courier New":{
         document.getElementById("personal").style.fontFamily=x.value;
         break;}
+        case "Lucida Handwriting":{
+            document.getElementById("personal").style.fontFamily=x.value;
+            break;}
     default :  document.getElementById("personal").style.fontFamily=x.value;
 
 }

@@ -9,6 +9,8 @@ if(x.length<6){
 }
 else document.getElementById("mess").style.display="none";
 
+
+
 }
 
 
