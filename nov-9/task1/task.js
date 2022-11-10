@@ -5,38 +5,21 @@ function personal_info(a){
 }
 
 function GENDER(b){
-    var y1=document.getElementById("female");
-    var y2=document.getElementById("male");
+   
+    if(b.checked){
+        localStorage.setItem(b.name,b.id);
+    }
+   
 
-    if(b.id == "female" && y1.checked){
-        localStorage.setItem(b.id,b.value);
-        localStorage["male"]="off";
-    }
-    else if(b.id == "male" && y2.checked){
-        localStorage.setItem(b.id,b.value);
-        localStorage["female"]="off";
-    }
+    
 }
 
+
 function LANG(L){
-    var y1=document.getElementById("JS");
-    var y2=document.getElementById("CSS");
-    var y3=document.getElementById("HTML");
-
-    if(L.id == "JS" && y1.checked){
-        localStorage.setItem(L.id,"JS");
-       
+    if(L.checked){
+        localStorage.setItem(L.id,L.name);
     }
 
-    if(L.id == "CSS" && y2.checked){
-        localStorage.setItem(L.id,"CSS");
-       
-    }
-
-    if(L.id =="HTML" && y3.checked){
-        localStorage.setItem(L.id,"HTML");
-       
-    }
 }
 
 
@@ -60,19 +43,20 @@ function Submit(){
     var x4=localStorage.getItem("desc");
     document.getElementById("des").innerHTML=x4;
 
-    if(localStorage.getItem("female")=="on"){document.getElementById("gen").innerHTML="Female";}
-    else if(localStorage.getItem("male")=="on"){document.getElementById("gen").innerHTML="Male";}
+    
+    var t=localStorage.getItem("gender");
+    document.getElementById("gen").innerHTML=t;
    
     
     if(document.getElementById("JS").checked){
         var x6=localStorage.getItem("JS");
-        document.getElementById("lan1").innerHTML=x6+" , ";
+        document.getElementById("lan1").innerHTML=x6+"    ";
     }
     else document.getElementById("lan1").innerHTML="";
 
     if(document.getElementById("CSS").checked){
         var x7=localStorage.getItem("CSS");
-        document.getElementById("lan2").innerHTML=x7+" , ";
+        document.getElementById("lan2").innerHTML=x7+"    ";
     }
     else document.getElementById("lan2").innerHTML="";
 

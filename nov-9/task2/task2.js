@@ -109,7 +109,7 @@ sessionStorage.setItem("description","Provides all party requirement {Resturant,
 var x1=sessionStorage.getItem("description");
 document.getElementById("desc").innerHTML=x1;
 
-
+/*--------------------------------------------- */
 sessionStorage.setItem("T1","Javascript");
 var a=sessionStorage.getItem("T1");
 document.getElementById("JS").innerHTML=a;
